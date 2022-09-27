@@ -1,11 +1,11 @@
 {
   "files": {
-    "app.js": "/homeward/static/js/app.0805b924.chunk.js",
-    "app.js.map": "/homeward/static/js/app.0805b924.chunk.js.map",
+    "app.js": "/homeward/static/js/app.964d59f0.chunk.js",
+    "app.js.map": "/homeward/static/js/app.964d59f0.chunk.js.map",
     "runtime~app.js": "/homeward/static/js/runtime~app.fac95988.js",
     "runtime~app.js.map": "/homeward/static/js/runtime~app.fac95988.js.map",
-    "static/js/2.1ef68a6a.chunk.js": "/homeward/static/js/2.1ef68a6a.chunk.js",
-    "static/js/2.1ef68a6a.chunk.js.map": "/homeward/static/js/2.1ef68a6a.chunk.js.map",
+    "static/js/2.1720cdd0.chunk.js": "/homeward/static/js/2.1720cdd0.chunk.js",
+    "static/js/2.1720cdd0.chunk.js.map": "/homeward/static/js/2.1720cdd0.chunk.js.map",
     "fonts/Poppins-Black.ttf": "/homeward/./fonts/Poppins-Black.ttf",
     "fonts/Poppins-BlackItalic.ttf": "/homeward/./fonts/Poppins-BlackItalic.ttf",
     "fonts/Poppins-Bold.ttf": "/homeward/./fonts/Poppins-Bold.ttf",
@@ -27,13 +27,13 @@
     "index.html": "/homeward/index.html",
     "manifest.json": "/homeward/manifest.json",
     "serve.json": "/homeward/serve.json",
-    "static/js/2.1ef68a6a.chunk.js.LICENSE.txt": "/homeward/static/js/2.1ef68a6a.chunk.js.LICENSE.txt",
+    "static/js/2.1720cdd0.chunk.js.LICENSE.txt": "/homeward/static/js/2.1720cdd0.chunk.js.LICENSE.txt",
     "static/media/more.png": "/homeward/static/media/more.5d38f063.png",
     "static/media/share.png": "/homeward/static/media/share.67ac1dde.png"
   },
   "entrypoints": [
     "static/js/runtime~app.fac95988.js",
-    "static/js/2.1ef68a6a.chunk.js",
-    "static/js/app.0805b924.chunk.js"
+    "static/js/2.1720cdd0.chunk.js",
+    "static/js/app.964d59f0.chunk.js"
   ]
 }
