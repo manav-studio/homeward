@@ -5,7 +5,7 @@
   "engines": {
     "node": "14"
   },
-  "homepage": "https://codalreef.github.io/homeward",
+  "homepage": "https://manav-studio.github.io/homeward",
   "engineStrict": true,
   "dependencies": {
     "@babel/core": "~7.9.0",
