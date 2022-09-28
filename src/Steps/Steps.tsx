@@ -6,7 +6,7 @@ import Step2 from './Step2';
 
 const Steps = () => {
   return (
-    <View style={{ borderWidth: 1, borderColor: 'white' }}>
+    <View>
       <Step1 />
       <Step2 />
     </View>
