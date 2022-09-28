@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Text, Image } from 'react-native';
-import { SCREEN_HEIGHT } from './style';
+import AppStyles, { SCREEN_HEIGHT } from './style';
 
 const Header = ({ letter, icon }: any) => {
   return (
@@ -19,9 +19,9 @@ const Header = ({ letter, icon }: any) => {
           style={{
             marginTop: SCREEN_HEIGHT * 0.02,
             color: 'white',
-            fontSize: 15,
             fontWeight: '900',
-            fontFamily: 'Gilroy-Medium'
+            fontSize: AppStyles.fontSize.FONT_16,
+            fontFamily: AppStyles.fonts.Gilroy_Medium
           }}>
           {letter}
         </Text>
@@ -35,9 +35,9 @@ const Header = ({ letter, icon }: any) => {
         <Text
           style={{
             color: 'white',
-            fontSize: 15,
             fontWeight: '900',
-            fontFamily: 'Gilroy-Bold',
+            fontSize: AppStyles.fontSize.FONT_16,
+            fontFamily: AppStyles.fonts.Gilroy_Bold,
             textAlign: 'center'
           }}>
           {`How to install single\nicons.`}
@@ -45,11 +45,10 @@ const Header = ({ letter, icon }: any) => {
         <Text
           style={{
             color: 'white',
-            fontSize: 15,
             fontWeight: '900',
-            fontFamily: 'Gilroy-Medium',
             textAlign: 'center',
-            marginTop: SCREEN_HEIGHT * 0.02
+            fontSize: AppStyles.fontSize.FONT_16,
+            fontFamily: AppStyles.fonts.Gilroy_Medium
           }}>
           {`Please note that you can install single\nicons only via Safari.`}
         </Text>
