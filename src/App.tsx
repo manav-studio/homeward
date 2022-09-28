@@ -1,9 +1,8 @@
 import * as React from 'react';
-import { Image, Linking, Text, View } from 'react-native';
+import { Text, View } from 'react-native';
 import { ImageResource, WebAppManifest } from 'web-app-manifest';
 
 //  Presentational Components
-import NotificationPage from './NotificationPage';
 import ErrorPage from './ErrorPage';
 import { base64icon } from './base64icons';
 import Header from './Header';
@@ -38,42 +37,24 @@ export class AppComponent extends React.Component<AppProps, AppState> {
     //
 
     if (!encodedLink || !encodedManifest) {
-      let letter = `ERA:App Icons`;
       return (
         <View
           style={{
-            height: '100%',
-            width: '100%',
+            flex: 1,
             backgroundColor: AppStyles.color.COLOR_PRIMARY_BLACK, //manifest.theme_color,
             alignItems: 'center',
             justifyContent: 'center'
           }}>
-          <View
+          <Text
             style={{
-              borderRadius: 20,
-              backgroundColor: AppStyles.color.COLOR_PWA_list_2,
-              alignItems: 'center',
-              justifyContent: 'center'
+              color: 'white',
+              fontWeight: '900',
+              fontSize: AppStyles.fontSize.FONT_16,
+              fontFamily: AppStyles.fonts.Gilroy_Medium
             }}>
-            <Text
-              style={{
-                fontFamily: 'Poppins-SemiBold',
-                color: AppStyles.color.COLOR_SECONDARY_WHITE,
-                fontSize: 15,
-                padding: 15
-              }}>
-              Added to Homescreen
-            </Text>
-          </View>
+            Oops!!! something went wrong
+          </Text>
         </View>
-      );
-      //  TODO:  Indicate missing link / manifest
-      return (
-        <NotificationPage
-          title="Welcome to Homeward"
-          text="Click Here for Usage Instruction"
-          onPress={() => Linking.openURL('https://github.com/CodalReef/Homeward')}
-        />
       );
     }
 
@@ -130,8 +111,8 @@ export class AppComponent extends React.Component<AppProps, AppState> {
     const isSafariIos = browserString.includes('ios') && browserString.includes('safari');
     const isAndroidChrome = browserString.includes('android') && browserString.includes('chrome');
 
-    //  Get the App Letter (or 'U' for Unknown)
-    const letter = manifest.name ? manifest.name[0] || 'U' : 'U';
+    //  Get the App title (or 'U' for Unknown)
+    const title = manifest.name ? manifest.name : 'Nothing';
 
     //  Get the Timestamps
     const storedTimestamp = Number.parseInt(timestamp);
@@ -156,7 +137,7 @@ export class AppComponent extends React.Component<AppProps, AppState> {
             alignItems: 'center',
             paddingTop: 85
           }}>
-          <Header letter={letter} icon={base64icon} />
+          <Header title={title} icon={base64icon} />
           <View style={{ height: 70 }} />
           <Steps />
         </View>
