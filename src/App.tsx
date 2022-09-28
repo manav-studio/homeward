@@ -1,35 +1,9 @@
 import * as React from 'react';
 import { Image, Linking, Text, View } from 'react-native';
 import { ImageResource, WebAppManifest } from 'web-app-manifest';
+import { ErrorPage } from './ErrorPage';
+import { NotificationPage } from './NotificationPage';
 
-//
-//  Presentational Components
-//
-
-const NotificationPage = ({ text, title, onPress }: { text: string; title: string; onPress?: () => void }) => {
-  return (
-    <View style={{ width: '100%', height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-      <View style={{ borderRadius: 20, backgroundColor: 'white', alignItems: 'center', justifyContent: 'center' }}>
-        <Text style={{ fontFamily: 'Poppins-SemiBold', color: '#444444', fontSize: 20 }}>{title}</Text>
-        <Text
-          onPress={onPress}
-          style={{ fontFamily: 'Poppins-SemiBold', color: onPress ? 'blue' : '#444444', fontSize: 15 }}>
-          {text}
-        </Text>
-      </View>
-    </View>
-  );
-};
-
-const ErrorPage = ({ text }: { text: string }) => {
-  return <NotificationPage text={text} title="Error" />;
-};
-
-//
-//  Main App
-//
-
-//  Config
 const secDelay = 10; //  Delay for 10 Seconds
 
 interface AppProps {}
