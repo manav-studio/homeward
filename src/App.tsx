@@ -5,6 +5,9 @@ import { ImageResource, WebAppManifest } from 'web-app-manifest';
 //  Presentational Components
 import NotificationPage from './NotificationPage';
 import ErrorPage from './ErrorPage';
+import { base64icon } from './base64icons';
+import Header from './Header';
+import Steps from './Steps';
 
 //  Config
 const secDelay = 10; //  Delay for 10 Seconds
@@ -34,6 +37,21 @@ export class AppComponent extends React.Component<AppProps, AppState> {
     //
 
     if (!encodedLink || !encodedManifest) {
+      let letter = `ERA:App Icons`;
+      return (
+        <View
+          style={{
+            height: '100%',
+            width: '100%',
+            backgroundColor: 'black', //manifest.theme_color,
+            alignItems: 'center',
+            paddingTop: 85
+          }}>
+          <Header letter={letter} icon={base64icon} />
+          <View style={{ height: 70 }} />
+          <Steps />
+        </View>
+      );
       //  TODO:  Indicate missing link / manifest
       return (
         <NotificationPage
