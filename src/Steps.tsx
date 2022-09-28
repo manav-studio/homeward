@@ -17,7 +17,7 @@ const Steps = () => {
           flexDirection: 'row',
           padding: 10,
           borderRadius: 10,
-          backgroundColor: AppStyles.color.COLOR_PRIMARY_BLACK,
+          backgroundColor: AppStyles.color.COLOR_PWA,
           width: SCREEN_WIDTH * 0.8
         }}>
         <Text style={{ fontFamily: 'Poppins-SemiBold', color: 'white', fontSize: 15 }}>{`1    Tap`}</Text>
