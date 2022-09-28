@@ -8,6 +8,7 @@ import ErrorPage from './ErrorPage';
 import { base64icon } from './base64icons';
 import Header from './Header';
 import Steps from './Steps/Steps';
+import AppStyles from './style';
 
 //  Config
 const secDelay = 10; //  Delay for 10 Seconds
@@ -43,13 +44,27 @@ export class AppComponent extends React.Component<AppProps, AppState> {
           style={{
             height: '100%',
             width: '100%',
-            backgroundColor: 'black', //manifest.theme_color,
+            backgroundColor: AppStyles.color.COLOR_PRIMARY_BLACK, //manifest.theme_color,
             alignItems: 'center',
-            paddingTop: 85
+            justifyContent: 'center'
           }}>
-          <Header letter={letter} icon={base64icon} />
-          <View style={{ height: 70 }} />
-          <Steps />
+          <View
+            style={{
+              borderRadius: 20,
+              backgroundColor: AppStyles.color.COLOR_PWA_list_2,
+              alignItems: 'center',
+              justifyContent: 'center'
+            }}>
+            <Text
+              style={{
+                fontFamily: 'Poppins-SemiBold',
+                color: AppStyles.color.COLOR_SECONDARY_WHITE,
+                fontSize: 15,
+                padding: 15
+              }}>
+              Added to Homescreen
+            </Text>
+          </View>
         </View>
       );
       //  TODO:  Indicate missing link / manifest
@@ -137,55 +152,13 @@ export class AppComponent extends React.Component<AppProps, AppState> {
           style={{
             height: '100%',
             width: '100%',
-            backgroundColor: manifest.theme_color,
+            backgroundColor: AppStyles.color.COLOR_PRIMARY_BLACK, //manifest.theme_color,
             alignItems: 'center',
             paddingTop: 85
           }}>
-          <Text style={{ color: 'white', fontSize: 200, fontWeight: '900' }}>{letter}</Text>
+          <Header letter={letter} icon={base64icon} />
           <View style={{ height: 70 }} />
-          {isSafariIos && (
-            <View
-              style={{ borderRadius: 20, backgroundColor: 'white', alignItems: 'center', justifyContent: 'center' }}>
-              <Text style={{ fontFamily: 'Poppins-SemiBold', color: '#444444', fontSize: 15, padding: 15 }}>
-                Tap the
-              </Text>
-              <Image
-                source={require('../assets/share.png')}
-                resizeMode="cover"
-                style={{ width: 30, height: 30, borderRadius: 7 }}
-              />
-              <Text style={{ fontFamily: 'Poppins-SemiBold', color: '#444444', fontSize: 15, padding: 15 }}>
-                button below to Save to Homescreen.
-              </Text>
-            </View>
-          )}
-          {isAndroidChrome && (
-            <View
-              style={{ borderRadius: 20, backgroundColor: 'white', alignItems: 'center', justifyContent: 'center' }}>
-              <Text style={{ fontFamily: 'Poppins-SemiBold', color: '#444444', fontSize: 15, padding: 15 }}>
-                Tap the
-              </Text>
-              <Image
-                source={require('../assets/more.png')}
-                resizeMode="cover"
-                style={{ width: 30, height: 30, borderRadius: 7 }}
-              />
-              <Text style={{ fontFamily: 'Poppins-SemiBold', color: '#444444', fontSize: 15, padding: 15 }}>
-                button above to Save to Homescreen.
-              </Text>
-            </View>
-          )}
-          {!isSafariIos && !isAndroidChrome && (
-            <View
-              style={{ borderRadius: 20, backgroundColor: 'white', alignItems: 'center', justifyContent: 'center' }}>
-              <Text style={{ fontFamily: 'Poppins-SemiBold', color: '#444444', fontSize: 15, padding: 15 }}>
-                Use the Browser
-              </Text>
-              <Text style={{ fontFamily: 'Poppins-SemiBold', color: '#444444', fontSize: 15, padding: 15 }}>
-                to Save to Homescreen.
-              </Text>
-            </View>
-          )}
+          <Steps />
         </View>
       );
     }
@@ -205,14 +178,24 @@ export class AppComponent extends React.Component<AppProps, AppState> {
         style={{
           height: '100%',
           width: '100%',
-          backgroundColor: manifest.theme_color,
+          backgroundColor: AppStyles.color.COLOR_PRIMARY_BLACK, //manifest.theme_color,
           alignItems: 'center',
-          paddingTop: 80
+          justifyContent: 'center'
         }}>
-        <Text style={{ color: 'white', fontSize: 200, fontWeight: '900' }}>{letter}</Text>
-        <View style={{ height: 70 }} />
-        <View style={{ borderRadius: 20, backgroundColor: 'white', alignItems: 'center', justifyContent: 'center' }}>
-          <Text style={{ fontFamily: 'Poppins-SemiBold', color: '#444444', fontSize: 15, padding: 15 }}>
+        <View
+          style={{
+            borderRadius: 20,
+            backgroundColor: AppStyles.color.COLOR_PWA_list_2,
+            alignItems: 'center',
+            justifyContent: 'center'
+          }}>
+          <Text
+            style={{
+              fontFamily: 'Poppins-SemiBold',
+              color: AppStyles.color.COLOR_SECONDARY_WHITE,
+              fontSize: 15,
+              padding: 15
+            }}>
             Added to Homescreen
           </Text>
         </View>
