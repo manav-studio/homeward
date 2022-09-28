@@ -2,18 +2,10 @@ import React from 'react';
 import { View, Text, Image } from 'react-native';
 import AppStyles, { SCREEN_HEIGHT } from './style';
 
-const Header = ({ letter, icon }: any) => {
+const Header = ({ title, icon }: any) => {
   return (
-    <View
-      style={{
-        justifyContent: 'center',
-        alignItems: 'center'
-      }}>
-      <View
-        style={{
-          justifyContent: 'center',
-          alignItems: 'center'
-        }}>
+    <View style={{ justifyContent: 'center', alignItems: 'center' }}>
+      <View style={{ justifyContent: 'center', alignItems: 'center' }}>
         <Image resizeMode="contain" style={{ height: 80, width: 80 }} source={{ uri: icon }} />
         <Text
           style={{
@@ -23,15 +15,10 @@ const Header = ({ letter, icon }: any) => {
             fontSize: AppStyles.fontSize.FONT_16,
             fontFamily: AppStyles.fonts.Gilroy_Medium
           }}>
-          {letter}
+          {title}
         </Text>
       </View>
-      <View
-        style={{
-          justifyContent: 'center',
-          alignItems: 'center',
-          marginTop: SCREEN_HEIGHT * 0.05
-        }}>
+      <View style={{ justifyContent: 'center', alignItems: 'center', marginTop: SCREEN_HEIGHT * 0.05 }}>
         <Text
           style={{
             color: 'white',
