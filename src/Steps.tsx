@@ -122,6 +122,16 @@ const Steps = () => {
               }}
               source={require('../assets/images/add.png')}
             />
+            <Image
+              resizeMode="contain"
+              style={{
+                height: 80,
+                width: 80,
+                position: 'absolute',
+                right: SCREEN_WIDTH * 0.06
+              }}
+              source={require('../assets/images/handSelect.png')}
+            />
           </View>
           {/* 3rd */}
           <View
