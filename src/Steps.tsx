@@ -69,6 +69,51 @@ const Steps = () => {
               }}>{`Select "Add to Home Screen" from the dropdown menu.`}</Text>
           </View>
         </View>
+        {/* list */}
+        <View
+          style={{
+            alignItems: 'center',
+            marginTop: SCREEN_HEIGHT * 0.02
+          }}>
+          {/* 1st */}
+          <View
+            style={{
+              padding: 10,
+              borderRadius: 10,
+              backgroundColor: AppStyles.color.COLOR_PWA_list_1,
+              width: '100%',
+              paddingVertical: SCREEN_HEIGHT * 0.02
+            }}>
+            <Text
+              style={{
+                fontFamily: AppStyles.fonts.Gilroy_SemiBold,
+                color: 'white',
+                fontSize: AppStyles.fontSize.FONT_14
+              }}>
+              Add Bookmark
+            </Text>
+          </View>
+          {/* 2nd */}
+          {/* 3rd */}
+          <View
+            style={{
+              padding: 10,
+              borderRadius: 10,
+              backgroundColor: AppStyles.color.COLOR_PWA_list_1,
+              width: '100%',
+              paddingVertical: SCREEN_HEIGHT * 0.02,
+              marginTop: SCREEN_HEIGHT * 0.01
+            }}>
+            <Text
+              style={{
+                fontFamily: AppStyles.fonts.Gilroy_SemiBold,
+                color: 'white',
+                fontSize: AppStyles.fontSize.FONT_14
+              }}>
+              Markup
+            </Text>
+          </View>
+        </View>
       </View>
     </View>
   );

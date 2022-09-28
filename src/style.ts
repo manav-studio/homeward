@@ -9,11 +9,13 @@ const AppStyles = {
     COLOR_BUTTON: '#3D348B',
     COLOR_GREY: '#8D8989',
     COLOR_CHINEASE_BLACK: 'rgba(18, 18, 18, 0.43)',
-    COLOR_PWA: '#2E2D2D'
+    COLOR_PWA: '#2E2D2D',
+    COLOR_PWA_list_1: '#363636'
   },
   fonts: {
     Gilroy_Medium: 'Gilroy-Medium',
-    Gilroy_Bold: 'Gilroy-Bold'
+    Gilroy_Bold: 'Gilroy-Bold',
+    Gilroy_SemiBold: 'Gilroy-SemiBold'
   },
   fontSize: {
     FONT_8: 8,
