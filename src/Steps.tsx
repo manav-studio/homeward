@@ -20,7 +20,12 @@ const Steps = () => {
           backgroundColor: AppStyles.color.COLOR_PWA,
           width: SCREEN_WIDTH * 0.8
         }}>
-        <Text style={{ fontFamily: 'Poppins-SemiBold', color: 'white', fontSize: 15 }}>{`1    Tap`}</Text>
+        <Text
+          style={{
+            fontFamily: AppStyles.fonts.Gilroy_Medium,
+            color: 'white',
+            fontSize: AppStyles.fontSize.FONT_16
+          }}>{`1    Tap`}</Text>
         <Image
           source={require('../assets/images/share.png')}
           resizeMode="contain"
@@ -30,7 +35,8 @@ const Steps = () => {
             paddingHorizontal: 15
           }}
         />
-        <Text style={{ fontFamily: 'Poppins-SemiBold', color: 'white', fontSize: 15 }}>
+        <Text
+          style={{ fontFamily: AppStyles.fonts.Gilroy_Medium, color: 'white', fontSize: AppStyles.fontSize.FONT_16 }}>
           at the bottom of the screen.
         </Text>
       </View>
@@ -40,10 +46,30 @@ const Steps = () => {
         style={{
           padding: 10,
           borderRadius: 10,
-          backgroundColor: AppStyles.color.COLOR_PRIMARY_BLACK,
+          backgroundColor: AppStyles.color.COLOR_PWA,
           width: SCREEN_WIDTH * 0.8,
           marginTop: SCREEN_HEIGHT * 0.02
-        }}></View>
+        }}>
+        {/* step 2 description */}
+        <View style={{ flexDirection: 'row', alignItems: 'center' }}>
+          <View>
+            <Text
+              style={{
+                fontFamily: AppStyles.fonts.Gilroy_Medium,
+                color: 'white',
+                fontSize: AppStyles.fontSize.FONT_16
+              }}>{`2    `}</Text>
+          </View>
+          <View style={{ width: '80%' }}>
+            <Text
+              style={{
+                fontFamily: AppStyles.fonts.Gilroy_Medium,
+                color: 'white',
+                fontSize: AppStyles.fontSize.FONT_16
+              }}>{`Select "Add to Home Screen" from the dropdown menu.`}</Text>
+          </View>
+        </View>
+      </View>
     </View>
   );
 };
