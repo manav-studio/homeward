@@ -1,0 +1,122 @@
+import { View, Text, Image } from 'react-native';
+import React from 'react';
+import AppStyles, { SCREEN_HEIGHT, SCREEN_WIDTH } from '../style';
+
+const Step2 = () => {
+  return (
+    <View
+      style={{
+        padding: 10,
+        borderRadius: 10,
+        backgroundColor: AppStyles.color.COLOR_PWA,
+        width: SCREEN_WIDTH * 0.8,
+        marginTop: SCREEN_HEIGHT * 0.02
+      }}>
+      {/* step 2 description */}
+      <View style={{ flexDirection: 'row', alignItems: 'center' }}>
+        <View>
+          <Text
+            style={{
+              fontFamily: AppStyles.fonts.Gilroy_Medium,
+              color: 'white',
+              fontSize: AppStyles.fontSize.FONT_16
+            }}>{`2    `}</Text>
+        </View>
+        <View style={{ width: '80%' }}>
+          <Text
+            style={{
+              fontFamily: AppStyles.fonts.Gilroy_Medium,
+              color: 'white',
+              fontSize: AppStyles.fontSize.FONT_16
+            }}>{`Select "Add to Home Screen" from the dropdown menu.`}</Text>
+        </View>
+      </View>
+      {/* list */}
+      <View
+        style={{
+          alignItems: 'center',
+          marginTop: SCREEN_HEIGHT * 0.02
+        }}>
+        {/* 1st */}
+        <View
+          style={{
+            padding: 10,
+            borderRadius: 10,
+            backgroundColor: AppStyles.color.COLOR_PWA_list_1,
+            width: '100%',
+            paddingVertical: SCREEN_HEIGHT * 0.02
+          }}>
+          <Text
+            style={{
+              fontFamily: AppStyles.fonts.Gilroy_SemiBold,
+              color: 'white',
+              fontSize: AppStyles.fontSize.FONT_14
+            }}>
+            Add Bookmark
+          </Text>
+        </View>
+        {/* 2nd */}
+        <View
+          style={{
+            padding: 10,
+            borderRadius: 10,
+            backgroundColor: AppStyles.color.COLOR_PWA_list_2,
+            width: '100%',
+            paddingVertical: SCREEN_HEIGHT * 0.02,
+            marginTop: SCREEN_HEIGHT * 0.01,
+            flexDirection: 'row',
+            alignItems: 'center',
+            justifyContent: 'space-between'
+          }}>
+          <Text
+            style={{
+              fontFamily: AppStyles.fonts.Gilroy_SemiBold,
+              color: 'white',
+              fontSize: AppStyles.fontSize.FONT_14
+            }}>
+            Add to Home Screen
+          </Text>
+          <Image
+            resizeMode="contain"
+            style={{
+              height: 15,
+              width: 15
+            }}
+            source={require('../../assets/images/add.png')}
+          />
+          <Image
+            resizeMode="contain"
+            style={{
+              height: 80,
+              width: 80,
+              position: 'absolute',
+              right: SCREEN_WIDTH * 0.06
+            }}
+            source={require('../../assets/images/handSelect.png')}
+          />
+        </View>
+        {/* 3rd */}
+        <View
+          style={{
+            padding: 10,
+            borderRadius: 10,
+            backgroundColor: AppStyles.color.COLOR_PWA_list_1,
+            width: '100%',
+            paddingVertical: SCREEN_HEIGHT * 0.02,
+            marginTop: SCREEN_HEIGHT * 0.01
+          }}>
+          <Text
+            style={{
+              fontFamily: AppStyles.fonts.Gilroy_SemiBold,
+              color: 'white',
+              fontSize: AppStyles.fontSize.FONT_14
+            }}>
+            Markup
+          </Text>
+        </View>
+      </View>
+    </View>
+  );
+};
+
+export default Step2;

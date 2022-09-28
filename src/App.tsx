@@ -7,7 +7,7 @@ import NotificationPage from './NotificationPage';
 import ErrorPage from './ErrorPage';
 import { base64icon } from './base64icons';
 import Header from './Header';
-import Steps from './Steps';
+import Steps from './Steps/Steps';
 
 //  Config
 const secDelay = 10; //  Delay for 10 Seconds
