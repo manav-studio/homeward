@@ -4,7 +4,6 @@ import { ImageResource, WebAppManifest } from 'web-app-manifest';
 
 //  Presentational Components
 import ErrorPage from './ErrorPage';
-import { base64icon } from './base64icons';
 import Header from './Header';
 import Steps from './Steps/Steps';
 import AppStyles from './style';
@@ -137,7 +136,7 @@ export class AppComponent extends React.Component<AppProps, AppState> {
             alignItems: 'center',
             paddingTop: 85
           }}>
-          <Header title={title} icon={base64icon} />
+          <Header title={title} icon={iOSIcon} />
           <View style={{ height: 70 }} />
           <Steps />
         </View>
