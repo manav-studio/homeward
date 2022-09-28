@@ -6,7 +6,6 @@ import { ImageResource, WebAppManifest } from 'web-app-manifest';
 import NotificationPage from './NotificationPage';
 import ErrorPage from './ErrorPage';
 
-
 //  Config
 const secDelay = 10; //  Delay for 10 Seconds
 
@@ -177,7 +176,7 @@ export class AppComponent extends React.Component<AppProps, AppState> {
 
     //  Guard Link
     if (link === null) {
-      return <Text>{name} + No Link was Provided</Text>;
+      return <Text>No Link was Provided</Text>;
     }
 
     //  Redirect to the Deep Link
