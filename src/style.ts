@@ -10,7 +10,8 @@ const AppStyles = {
     COLOR_GREY: '#8D8989',
     COLOR_CHINEASE_BLACK: 'rgba(18, 18, 18, 0.43)',
     COLOR_PWA: '#2E2D2D',
-    COLOR_PWA_list_1: '#363636'
+    COLOR_PWA_list_1: '#363636',
+    COLOR_PWA_list_2: '#525252'
   },
   fonts: {
     Gilroy_Medium: 'Gilroy-Medium',
