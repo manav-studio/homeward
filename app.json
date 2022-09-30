@@ -1,18 +1,15 @@
 {
-  "name": "Homeward",
-  "displayName": "Homeward",
+  "name": "App Icon",
+  "displayName": "App Icon",
   "privacy": "unlisted",
   "expo": {
-    "platforms": [
-      "web",
-      "ios"
-    ],
+    "platforms": ["web", "ios"],
     "version": "1.0.0",
-    "slug": "Homeward",
-    "name": "Homeward",
+    "slug": "App Icon",
+    "name": "App Icon",
     "privacy": "unlisted",
     "ios": {
-      "bundleIdentifier": "com.oranda.homeward",
+      "bundleIdentifier": "org.venture361.eraIcon",
       "supportsTablet": true
     }
   }
