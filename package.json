@@ -5,7 +5,7 @@
   "engines": {
     "node": "14"
   },
-  "homepage": "https://codalreef.github.io/homeward",
+  "homepage": "https://app-icon-361.web.app/",
   "engineStrict": true,
   "dependencies": {
     "@babel/core": "~7.9.0",
@@ -67,7 +67,9 @@
     "install-web": "npm install react-native-reanimated@latest",
     "install-native": "npm install react-native-reanimated@1.2.0",
     "which-tsc": "which tsc",
-    "build": "tsc"
+    "build": "tsc",
+    "predeploy": "expo build:web",
+    "deploy-hosting": "npm run predeploy && firebase deploy --only hosting"
   },
   "devDependencies": {
     "@expo/webpack-config": "~0.12.63",
