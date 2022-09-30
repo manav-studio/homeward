@@ -9,7 +9,6 @@
 # production
 /build
 /dist
-/web-build
 /web
 
 # misc
