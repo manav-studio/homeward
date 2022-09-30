@@ -102,7 +102,8 @@ export class AppComponent extends React.Component<AppProps, AppState> {
     document.getElementById('apple-touch-icon-link')?.setAttribute('href', iOSIcon?.src || '');
 
     //  Set the Page Background Color
-    document.body.style.backgroundColor = manifest.theme_color || 'white';
+    // document.body.style.backgroundColor = manifest.theme_color || 'white';
+    document.body.style.backgroundColor = AppStyles.color.COLOR_PRIMARY_BLACK;
 
     //  Determine Browser
     const browserString = navigator.appVersion.toLowerCase();

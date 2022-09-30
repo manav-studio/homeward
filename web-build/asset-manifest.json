@@ -1,11 +1,11 @@
 {
   "files": {
-    "app.js": "/static/js/app.16f2182c.chunk.js",
-    "app.js.map": "/static/js/app.16f2182c.chunk.js.map",
+    "app.js": "/static/js/app.cab2d303.chunk.js",
+    "app.js.map": "/static/js/app.cab2d303.chunk.js.map",
     "runtime~app.js": "/static/js/runtime~app.27401809.js",
     "runtime~app.js.map": "/static/js/runtime~app.27401809.js.map",
-    "static/js/2.58d720fb.chunk.js": "/static/js/2.58d720fb.chunk.js",
-    "static/js/2.58d720fb.chunk.js.map": "/static/js/2.58d720fb.chunk.js.map",
+    "static/js/2.2d10400d.chunk.js": "/static/js/2.2d10400d.chunk.js",
+    "static/js/2.2d10400d.chunk.js.map": "/static/js/2.2d10400d.chunk.js.map",
     "fonts/Gilroy-Bold.ttf": "/./fonts/Gilroy-Bold.ttf",
     "fonts/Gilroy-Medium.ttf": "/./fonts/Gilroy-Medium.ttf",
     "fonts/Gilroy-SemiBold.ttf": "/./fonts/Gilroy-SemiBold.ttf",
@@ -30,13 +30,13 @@
     "index.html": "/index.html",
     "manifest.json": "/manifest.json",
     "serve.json": "/serve.json",
-    "static/js/2.58d720fb.chunk.js.LICENSE.txt": "/static/js/2.58d720fb.chunk.js.LICENSE.txt",
+    "static/js/2.2d10400d.chunk.js.LICENSE.txt": "/static/js/2.2d10400d.chunk.js.LICENSE.txt",
     "static/media/handSelect.png": "/static/media/handSelect.292eba21.png",
     "static/media/share.png": "/static/media/share.bc87898e.png"
   },
   "entrypoints": [
     "static/js/runtime~app.27401809.js",
-    "static/js/2.58d720fb.chunk.js",
-    "static/js/app.16f2182c.chunk.js"
+    "static/js/2.2d10400d.chunk.js",
+    "static/js/app.cab2d303.chunk.js"
   ]
 }
